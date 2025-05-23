@@ -40,7 +40,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-gray-600 mb-8"
           >
-            Creative Designer & Digital Artist
+            Business Program Manager
           </motion.p>
           <motion.p 
             initial={{ opacity: 0 }}
@@ -48,8 +48,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-lg text-gray-500 mb-12 max-w-2xl mx-auto"
           >
-            Crafting beautiful digital experiences with passion and precision. 
-            I bring ideas to life through innovative design and creative storytelling.
+            With over 17 years in life sciences, I specialize in cross-functional collaboration, strategic management, and innovation in cancer therapeutics. Currently contributing to transformative oncology solutions at Bharath Advanced Therapeutics.
           </motion.p>
           <motion.div 
             initial={{ opacity: 0 }}

@@ -68,41 +68,49 @@ const TimelineItem = ({ event, index, isOdd }: { event: TimelineEvent, index: nu
 const Timeline = () => {
   const events: TimelineEvent[] = [
     {
-      year: "2023",
-      title: "Senior Design Lead",
-      description: "Leading design strategy for major tech clients at DesignForward Agency",
+      year: "2024",
+      title: "Business Program Manager – Bharath Advanced Therapeutics",
+      description: "Driving oncology innovation by managing cross-functional programs to support cancer therapy development.",
       icon: Briefcase,
       category: "Work"
     },
     {
-      year: "2021",
-      title: "Design Excellence Award",
-      description: "Recognized for outstanding contributions to digital product design",
+      year: "2023",
+      title: "Program Manager – NCBS",
+      description: "Led life sciences research initiatives and coordinated projects to align with institutional objectives.",
+      icon: Briefcase,
+      category: "Work"
+    },
+    {
+      year: "2019",
+      title: "Chairperson, POSH ICC – India Alliance",
+      description: "Oversaw implementation of POSH compliance and internal committee operations.",
       icon: Award,
       category: "Achievement"
     },
     {
-      year: "2020",
-      title: "UX Design Lead",
-      description: "Headed the UX team at TechVision, delivering solutions for Fortune 500 clients",
+      year: "2013",
+      title: "Senior Grants Advisor – The Wellcome Trust / DBT India Alliance",
+      description: "Managed science communication, stakeholder engagement, and federal grant advisory.",
       icon: Briefcase,
       category: "Work"
     },
     {
-      year: "2018",
-      title: "Master's in Digital Design",
-      description: "Graduated with distinction from Design Institute",
+      year: "2012",
+      title: "Post-Doctoral Research – Karolinska Institutet",
+      description: "Conducted solution X-ray scattering studies on intrinsically disordered proteins.",
       icon: GraduationCap,
       category: "Education"
     },
     {
-      year: "2016",
-      title: "UI/UX Designer",
-      description: "Started professional journey at CreativeMinds Studio",
-      icon: Briefcase,
-      category: "Work"
-    },
+      year: "2009",
+      title: "PhD in Biochemistry – Montana State University",
+      description: "Awarded doctorate for structural and biochemical research contributions.",
+      icon: GraduationCap,
+      category: "Education"
+    }
   ];
+  
 
   const timelineRef = useRef(null);
   const isInView = useInView(timelineRef, { once: true });

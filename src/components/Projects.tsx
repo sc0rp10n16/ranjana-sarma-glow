@@ -6,30 +6,32 @@ import { Link } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Modern shopping experience with intuitive design",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&h=300&fit=crop",
-      tags: ["UI/UX", "React", "E-commerce"]
+      title: "Oncology Program Management",
+      description: "Coordinating cross-functional teams and driving timelines for transformative cancer therapies at Bharath Advanced Therapeutics.",
+      image: "placeholder.svg",
+      tags: ["Oncology", "Program Management", "Therapeutics"]
     },
     {
-      title: "Mobile Banking App",
-      description: "Secure and user-friendly banking interface",
-      image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=500&h=300&fit=crop",
-      tags: ["Mobile", "Fintech", "UX"]
+      title: "Life Sciences Research Strategy – NCBS",
+      description: "Led initiatives that aligned scientific research with strategic goals at the National Centre for Biological Sciences.",
+      image: "placeholder.svg",
+      tags: ["Life Sciences", "Research Leadership", "Strategy"]
     },
     {
-      title: "Brand Identity System",
-      description: "Complete visual identity for tech startup",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&h=300&fit=crop",
-      tags: ["Branding", "Logo", "Visual Identity"]
+      title: "POSH ICC Implementation",
+      description: "Chairperson at India Alliance ensuring compliance, training, and legal adherence to the POSH Act across departments.",
+      image: "placeholder.svg",
+      tags: ["Policy", "Diversity & Inclusion", "Leadership"]
     },
     {
-      title: "Dashboard Analytics",
-      description: "Data visualization dashboard for business insights",
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=500&h=300&fit=crop",
-      tags: ["Dashboard", "Data Viz", "Analytics"]
+      title: "Science Communication Workshops",
+      description: "Designed and mentored workshops on research ethics, writing, and presentation skills for students and early-career researchers.",
+      image: "placeholder.svg",
+      tags: ["Science Communication", "Mentorship", "Workshops"]
     }
   ];
+  
+  
 
   return (
     <section id="projects" className="py-20 bg-white">

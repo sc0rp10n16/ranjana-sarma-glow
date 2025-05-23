@@ -6,37 +6,38 @@ import { motion } from "framer-motion";
 const Skills = () => {
   const skills = [
     {
-      icon: Pen,
-      title: "UI/UX Design",
-      description: "Creating intuitive and beautiful user interfaces",
+      icon: Layers,
+      title: "Program Management",
+      description: "Leading cross-functional teams and managing research programs with strategic alignment",
       color: "from-purple-500 to-purple-600"
     },
     {
-      icon: Code,
-      title: "Frontend Development",
-      description: "Building responsive and interactive web applications",
+      icon: BarChart,
+      title: "Strategic Planning",
+      description: "Driving long-term vision through data-driven strategy and stakeholder engagement",
       color: "from-pink-500 to-pink-600"
     },
     {
-      icon: Star,
-      title: "Brand Design",
-      description: "Developing unique brand identities and visual systems",
-      color: "from-blue-500 to-blue-600"
+      icon: Users,
+      title: "Team Leadership",
+      description: "Mentoring and guiding professionals across scientific and administrative domains",
+      color: "from-green-500 to-green-600"
     },
     {
-      icon: Users,
-      title: "User Research",
-      description: "Understanding user needs through research and testing",
-      color: "from-green-500 to-green-600"
+      icon: Pen,
+      title: "Science Communication",
+      description: "Conveying complex scientific ideas to diverse audiences through training and outreach",
+      color: "from-blue-500 to-blue-600"
     }
   ];
   
+  
   const tools = [
-    { name: "Figma", level: 95 },
-    { name: "Adobe XD", level: 90 },
-    { name: "Sketch", level: 85 },
-    { name: "Photoshop", level: 80 },
-    { name: "Illustrator", level: 75 },
+    { name: "Program Coordination", level: 95 },
+    { name: "Scientific Writing", level: 90 },
+    { name: "Stakeholder Engagement", level: 88 },
+    { name: "Research Strategy", level: 85 },
+    { name: "Grant Advisory", level: 80 },
   ];
 
   const container = {

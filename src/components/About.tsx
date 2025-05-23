@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 
 const About = () => {
@@ -13,42 +12,33 @@ const About = () => {
         </div>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Text Section */}
           <div className="order-2 md:order-1">
             <div className="space-y-6">
-              <p className="text-lg text-gray-600 leading-relaxed">
-                Hello! I'm Ranjana, a passionate designer with over 5 years of experience in creating 
-                digital experiences that matter. I believe in the power of good design to transform 
-                ideas into impactful solutions.
+              <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                I'm a Business Program Manager at Bharath Advanced Therapeutics with over 17 years of experience in life sciences and research management. My expertise spans biochemistry, oncology innovation, and strategic program execution.
               </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                My journey in design started with a curiosity for how beautiful interfaces can 
-                enhance user experiences. Today, I specialize in creating brands and digital 
-                products that not only look stunning but also serve their purpose effectively.
+              <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                Throughout my career, I’ve held diverse roles—from post-doctoral researcher in Sweden to senior grants advisor and POSH chair at the India Alliance. I bring a unique blend of scientific acumen, leadership, and communication, helping organizations align research objectives with real-world impact.
               </p>
-              <div className="grid grid-cols-2 gap-4 mt-8">
-                <Card className="p-4 text-center hover:shadow-lg transition-all duration-300 hover:scale-105">
-                  <div className="text-3xl font-bold text-purple-600 mb-2">50+</div>
-                  <div className="text-gray-600">Projects Completed</div>
-                </Card>
-                <Card className="p-4 text-center hover:shadow-lg transition-all duration-300 hover:scale-105">
-                  <div className="text-3xl font-bold text-pink-600 mb-2">30+</div>
-                  <div className="text-gray-600">Happy Clients</div>
-                </Card>
-              </div>
+              <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                I'm passionate about fostering cross-functional collaboration, empowering teams, and building bridges between science and strategy to drive transformative change in the healthcare ecosystem.
+              </p>
             </div>
           </div>
-          
+
+          {/* Image Section */}
           <div className="order-1 md:order-2">
-            <div className="relative">
-              <div className="w-80 h-80 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full mx-auto relative overflow-hidden">
+            <div className="relative mx-auto w-64 h-64 md:w-80 md:h-80">
+              <div className="w-full h-full bg-gradient-to-br from-purple-400 to-pink-400 rounded-full overflow-hidden relative">
                 <img 
                   src="/lovable-uploads/aa5e8fc0-23f5-4957-a138-4857a9963333.png" 
                   alt="Ranjana Sarma" 
                   className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-yellow-400 rounded-full animate-pulse"></div>
-              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-blue-400 rounded-full animate-pulse delay-500"></div>
+              <div className="absolute -top-4 -right-4 w-16 h-16 md:w-24 md:h-24 bg-yellow-400 rounded-full animate-pulse"></div>
+              <div className="absolute -bottom-4 -left-4 w-12 h-12 md:w-16 md:h-16 bg-blue-400 rounded-full animate-pulse delay-500"></div>
             </div>
           </div>
         </div>
