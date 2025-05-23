@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 const About = () => {
   return (
-    <section className="py-20 bg-white">
+    <section id="about" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
@@ -41,9 +41,11 @@ const About = () => {
           <div className="order-1 md:order-2">
             <div className="relative">
               <div className="w-80 h-80 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full mx-auto relative overflow-hidden">
-                <div className="absolute inset-4 bg-white rounded-full flex items-center justify-center">
-                  <div className="text-6xl">👩‍💼</div>
-                </div>
+                <img 
+                  src="/lovable-uploads/aa5e8fc0-23f5-4957-a138-4857a9963333.png" 
+                  alt="Ranjana Sarma" 
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
               </div>
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-yellow-400 rounded-full animate-pulse"></div>
               <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-blue-400 rounded-full animate-pulse delay-500"></div>

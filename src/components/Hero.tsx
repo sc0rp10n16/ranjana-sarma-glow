@@ -3,8 +3,15 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 
 const Hero = () => {
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 via-white to-pink-50 relative overflow-hidden">
+    <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 via-white to-pink-50 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
@@ -25,10 +32,19 @@ const Hero = () => {
             I bring ideas to life through innovative design and creative storytelling.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in delay-700">
-            <Button size="lg" className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3 rounded-full transition-all duration-300 hover:scale-105">
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3 rounded-full transition-all duration-300 hover:scale-105"
+              onClick={() => scrollToSection('projects')}
+            >
               View My Work
             </Button>
-            <Button variant="outline" size="lg" className="border-purple-300 text-purple-700 hover:bg-purple-50 px-8 py-3 rounded-full transition-all duration-300 hover:scale-105">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="border-purple-300 text-purple-700 hover:bg-purple-50 px-8 py-3 rounded-full transition-all duration-300 hover:scale-105"
+              onClick={() => scrollToSection('contact')}
+            >
               Get In Touch
             </Button>
           </div>
@@ -36,7 +52,10 @@ const Hero = () => {
       </div>
       
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div 
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer"
+        onClick={() => scrollToSection('about')}
+      >
         <ArrowDown className="text-purple-400 w-6 h-6" />
       </div>
     </section>

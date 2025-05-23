@@ -5,10 +5,54 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Linkedin, Instagram } from "lucide-react";
+import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
+  const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    subject: "",
+    message: ""
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({ ...prev, [id]: value }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Form validation
+    if (!formData.firstName || !formData.email || !formData.message) {
+      toast({
+        title: "Missing information",
+        description: "Please fill out all required fields.",
+        variant: "destructive"
+      });
+      return;
+    }
+    
+    // Success toast (in real app, would send this data to backend)
+    toast({
+      title: "Message sent!",
+      description: "Thank you for reaching out. I'll get back to you soon!",
+    });
+    
+    // Reset form
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      subject: "",
+      message: ""
+    });
+  };
+
   return (
-    <section className="py-20 bg-gradient-to-br from-purple-50 via-white to-pink-50">
+    <section id="contact" className="py-20 bg-gradient-to-br from-purple-50 via-white to-pink-50">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
@@ -24,34 +68,61 @@ const Contact = () => {
           <div>
             <Card className="p-8 hover:shadow-xl transition-all duration-300">
               <h3 className="text-2xl font-semibold text-gray-800 mb-6">Send a Message</h3>
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <Label htmlFor="firstName">First Name</Label>
-                    <Input id="firstName" placeholder="Your first name" className="mt-1" />
+                    <Label htmlFor="firstName">First Name*</Label>
+                    <Input 
+                      id="firstName" 
+                      placeholder="Your first name" 
+                      className="mt-1"
+                      value={formData.firstName}
+                      onChange={handleChange} 
+                    />
                   </div>
                   <div>
                     <Label htmlFor="lastName">Last Name</Label>
-                    <Input id="lastName" placeholder="Your last name" className="mt-1" />
+                    <Input 
+                      id="lastName" 
+                      placeholder="Your last name" 
+                      className="mt-1"
+                      value={formData.lastName}
+                      onChange={handleChange}
+                    />
                   </div>
                 </div>
                 <div>
-                  <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" placeholder="your@email.com" className="mt-1" />
+                  <Label htmlFor="email">Email*</Label>
+                  <Input 
+                    id="email" 
+                    type="email" 
+                    placeholder="your@email.com" 
+                    className="mt-1"
+                    value={formData.email}
+                    onChange={handleChange}
+                  />
                 </div>
                 <div>
                   <Label htmlFor="subject">Subject</Label>
-                  <Input id="subject" placeholder="Project inquiry" className="mt-1" />
+                  <Input 
+                    id="subject" 
+                    placeholder="Project inquiry" 
+                    className="mt-1"
+                    value={formData.subject}
+                    onChange={handleChange}
+                  />
                 </div>
                 <div>
-                  <Label htmlFor="message">Message</Label>
+                  <Label htmlFor="message">Message*</Label>
                   <Textarea 
                     id="message" 
                     placeholder="Tell me about your project..." 
-                    className="mt-1 min-h-[120px]" 
+                    className="mt-1 min-h-[120px]"
+                    value={formData.message}
+                    onChange={handleChange}
                   />
                 </div>
-                <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white py-3 rounded-full transition-all duration-300 hover:scale-105">
+                <Button type="submit" className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white py-3 rounded-full transition-all duration-300 hover:scale-105">
                   Send Message
                 </Button>
               </form>
