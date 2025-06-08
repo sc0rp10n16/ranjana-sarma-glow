@@ -32,7 +32,7 @@ const About = () => {
             <div className="relative mx-auto w-64 h-64 md:w-80 md:h-80">
               <div className="w-full h-full bg-gradient-to-br from-purple-400 to-pink-400 rounded-full overflow-hidden relative">
                 <img 
-                  src="/lovable-uploads/aa5e8fc0-23f5-4957-a138-4857a9963333.png" 
+                  src="/images/rs.png" 
                   alt="Ranjana Sarma" 
                   className="absolute inset-0 w-full h-full object-cover"
                 />

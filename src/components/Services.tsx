@@ -3,42 +3,30 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "lucide-react";
 
-const Projects = () => {
-  const projects = [
+const Services = () => {
+  const services = [
     {
-      title: "Oncology Program Management",
-      description: "Coordinating cross-functional teams and driving timelines for transformative cancer therapies at Bharath Advanced Therapeutics.",
-      image: "placeholder.svg",
-      tags: ["Oncology", "Program Management", "Therapeutics"]
+      title: "Enabling Entrepreneurial Focus Groups",
+      description: "Creating and facilitating focus groups to assist in the development and growth of entrepreneurial ventures.",
+      image: "placeholder.svg", // You might want to change this path to an actual image
+      tags: ["Entrepreneurship", "Mentorship", "Business Development", "Networking"]
     },
     {
-      title: "Life Sciences Research Strategy – NCBS",
-      description: "Led initiatives that aligned scientific research with strategic goals at the National Centre for Biological Sciences.",
-      image: "placeholder.svg",
-      tags: ["Life Sciences", "Research Leadership", "Strategy"]
-    },
-    {
-      title: "POSH ICC Implementation",
-      description: "Chairperson at India Alliance ensuring compliance, training, and legal adherence to the POSH Act across departments.",
-      image: "placeholder.svg",
-      tags: ["Policy", "Diversity & Inclusion", "Leadership"]
-    },
-    {
-      title: "Science Communication Workshops",
-      description: "Designed and mentored workshops on research ethics, writing, and presentation skills for students and early-career researchers.",
-      image: "placeholder.svg",
-      tags: ["Science Communication", "Mentorship", "Workshops"]
+      title: "Fundraising Support for Startups & Academics",
+      description: "Providing comprehensive support for startup founders and academics in their fundraising efforts, from strategy to execution.",
+      image: "placeholder.svg", // You might want to change this path to an actual image
+      tags: ["Fundraising", "Startups", "Academics", "Investment", "Strategy"]
     }
   ];
   
   
 
   return (
-    <section id="projects" className="py-20 bg-white">
+    <section id="services" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-            Featured Projects
+            Featured services
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto rounded-full"></div>
           <p className="text-lg text-gray-600 mt-6 max-w-2xl mx-auto">
@@ -47,12 +35,12 @@ const Projects = () => {
         </div>
         
         <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
+          {services.map((service, index) => (
             <Card key={index} className="overflow-hidden group hover:shadow-2xl transition-all duration-500 hover:scale-105">
               <div className="relative overflow-hidden">
                 <img 
-                  src={project.image} 
-                  alt={project.title}
+                  src={service.image} 
+                  alt={service.title}
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -65,11 +53,11 @@ const Projects = () => {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2 group-hover:text-purple-600 transition-colors duration-300">
-                  {project.title}
+                  {service.title}
                 </h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
+                <p className="text-gray-600 mb-4">{service.description}</p>
                 <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag, tagIndex) => (
+                  {service.tags.map((tag, tagIndex) => (
                     <span 
                       key={tagIndex}
                       className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm hover:bg-purple-200 transition-colors duration-200"
@@ -87,4 +75,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Services;

@@ -32,13 +32,7 @@ const Skills = () => {
   ];
   
   
-  const tools = [
-    { name: "Program Coordination", level: 95 },
-    { name: "Scientific Writing", level: 90 },
-    { name: "Stakeholder Engagement", level: 88 },
-    { name: "Research Strategy", level: 85 },
-    { name: "Grant Advisory", level: 80 },
-  ];
+  
 
   const container = {
     hidden: { opacity: 0 },
@@ -100,37 +94,7 @@ const Skills = () => {
           ))}
         </motion.div>
 
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          viewport={{ once: true }}
-          className="bg-white rounded-lg shadow-lg p-8 max-w-3xl mx-auto"
-        >
-          <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-            <Layers className="mr-2 text-purple-600" />
-            Tools & Technologies
-          </h3>
-          <div className="space-y-6">
-            {tools.map((tool, index) => (
-              <div key={index}>
-                <div className="flex justify-between mb-2">
-                  <span className="text-gray-700 font-medium">{tool.name}</span>
-                  <span className="text-purple-600 font-semibold">{tool.level}%</span>
-                </div>
-                <div className="h-3 w-full bg-gray-200 rounded-full overflow-hidden">
-                  <motion.div 
-                    initial={{ width: 0 }}
-                    whileInView={{ width: `${tool.level}%` }}
-                    transition={{ duration: 1, delay: 0.2 + (index * 0.1) }}
-                    viewport={{ once: true }}
-                    className={`h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full`}
-                  ></motion.div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </motion.div>
+        
       </div>
     </section>
   );
