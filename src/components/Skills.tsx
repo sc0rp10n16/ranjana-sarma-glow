@@ -7,26 +7,26 @@ const Skills = () => {
   const skills = [
     {
       icon: Layers,
-      title: "Program Management",
-      description: "Leading cross-functional teams and managing research programs with strategic alignment",
+      title: "Strategic Leadership",
+      description: "Boardroom decision-making, family enterprise advisement, and sustainable growth planning",
       color: "from-purple-500 to-purple-600"
     },
     {
       icon: BarChart,
-      title: "Strategic Planning",
-      description: "Driving long-term vision through data-driven strategy and stakeholder engagement",
+      title: "Financial & Legal Acumen",
+      description: "MBA-driven strategy, financial modeling, audit clarity, and patent law expertise",
       color: "from-pink-500 to-pink-600"
     },
     {
       icon: Users,
-      title: "Team Leadership",
-      description: "Mentoring and guiding professionals across scientific and administrative domains",
+      title: "Education & Mentorship",
+      description: "Career counselling, communications mentoring, and empowering first-generation learners",
       color: "from-green-500 to-green-600"
     },
     {
       icon: Pen,
-      title: "Science Communication",
-      description: "Conveying complex scientific ideas to diverse audiences through training and outreach",
+      title: "Community Safety & Wellness",
+      description: "Certified swimming instructor, water safety educator, and community health advocate",
       color: "from-blue-500 to-blue-600"
     }
   ];

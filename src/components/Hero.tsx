@@ -31,47 +31,39 @@ const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
         >
-          <h1 className="text-6xl md:text-8xl font-bold section-heading mb-6 leading-tight">
-            Ranjana Sarma
+          <h1 className="text-6xl md:text-8xl font-bold section-heading mb-8 leading-tight py-2">
+            Grow with Ranjana
           </h1>
           <motion.p 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl text-gray-600 mb-8"
+            className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed"
           >
-            Business Program Manager
+            Where science meets strategy, and purpose meets possibility.
           </motion.p>
           <motion.p 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-lg text-gray-500 mb-12 max-w-2xl mx-auto"
+            className="text-lg text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed"
           >
-            With over 17 years in life sciences, I specialize in cross-functional collaboration, strategic management, and innovation in cancer therapeutics. Currently contributing to transformative oncology solutions at Bharath Advanced Therapeutics.
+            I work across disciplines to create meaningful change—with clarity, care, and quiet power. Let's grow something that lasts.
           </motion.p>
           <motion.div 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            className="mb-12"
           >
-            <Button 
-              size="lg" 
-              className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-6 rounded-full transition-all duration-300 hover:scale-105 text-lg"
-              onClick={() => scrollToSection('projects')}
-            >
-              View My Work
-              <ExternalLink className="ml-2 h-5 w-5" />
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="border-2 border-purple-300 text-purple-700 hover:bg-purple-50 px-8 py-6 rounded-full transition-all duration-300 hover:scale-105 text-lg"
-              onClick={() => scrollToSection('contact')}
-            >
-              Get In Touch
-            </Button>
+            <div className="text-center">
+              <p className="text-lg font-semibold text-purple-700 mb-2">
+                Creating a Gravitational Field for Growth
+              </p>
+              <p className="text-base text-gray-600 tracking-wider">
+                Adapt. Empower. Lead. Repeat.
+              </p>
+            </div>
           </motion.div>
         </motion.div>
       </motion.div>

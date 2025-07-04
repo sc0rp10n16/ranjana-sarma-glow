@@ -2,20 +2,27 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "lucide-react";
+import { title } from "process";
 
 const Services = () => {
   const services = [
     {
       title: "Enabling Entrepreneurial Focus Groups",
       description: "Creating and facilitating focus groups to assist in the development and growth of entrepreneurial ventures.",
-      image: "placeholder.svg", // You might want to change this path to an actual image
+      image: "2.svg", // You might want to change this path to an actual image
       tags: ["Entrepreneurship", "Mentorship", "Business Development", "Networking"]
     },
     {
       title: "Fundraising Support for Startups & Academics",
       description: "Providing comprehensive support for startup founders and academics in their fundraising efforts, from strategy to execution.",
-      image: "placeholder.svg", // You might want to change this path to an actual image
+      image: "3.svg", // You might want to change this path to an actual image
       tags: ["Fundraising", "Startups", "Academics", "Investment", "Strategy"]
+    },
+    {
+      title: "Mentorship to students looking for career growth",
+      description: "Offering personalized mentorship to students seeking guidance and support in their career paths.",
+      image: "1.svg", // You might want to change this path to an actual image
+      tags: ["Mentorship", "Career Growth", "Student Support", "Guidance"]
     }
   ];
   

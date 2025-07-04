@@ -68,6 +68,13 @@ const TimelineItem = ({ event, index, isOdd }: { event: TimelineEvent, index: nu
 const Timeline = () => {
   const events: TimelineEvent[] = [
     {
+      year: "Present",
+      title: "Multi-Sector Professional & Educator",
+      description: "Career Counsellor with Freedom Employability Academy, Certified AUSTSWIM Swimming Instructor, and Strategic Business Consultant.",
+      icon: Briefcase,
+      category: "Work"
+    },
+    {
       year: "2024",
       title: "Business Program Manager – Bharath Advanced Therapeutics",
       description: "Driving oncology innovation by managing cross-functional programs to support cancer therapy development.",
@@ -103,9 +110,23 @@ const Timeline = () => {
       category: "Education"
     },
     {
+      year: "MBA",
+      title: "MBA in General Management",
+      description: "Equipped with strategic tools, financial modeling, and audit clarity for business leadership.",
+      icon: GraduationCap,
+      category: "Education"
+    },
+    {
       year: "2009",
       title: "PhD in Biochemistry – Montana State University",
-      description: "Awarded doctorate for structural and biochemical research contributions.",
+      description: "Awarded doctorate for structural and biochemical research contributions with foundation in intellectual inquiry.",
+      icon: GraduationCap,
+      category: "Education"
+    },
+    {
+      year: "Patent Law",
+      title: "Postgraduate Diploma in Patent Law",
+      description: "Specialized expertise in intellectual property strategy and innovation frameworks.",
       icon: GraduationCap,
       category: "Education"
     }

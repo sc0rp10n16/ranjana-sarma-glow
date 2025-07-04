@@ -13,20 +13,24 @@ const About = () => {
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Text Section */}
-          <div className="order-2 md:order-1">
+           <div className="order-2 md:order-1">
             <div className="space-y-6">
               <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                I'm a Business Program Manager at Bharath Advanced Therapeutics with over 17 years of experience in life sciences and research management. My expertise spans biochemistry, oncology innovation, and strategic program execution.
+                I'm Ranjana Sarma, a mission-adaptable professional with a diverse skill set spanning science, management, law, education, and community health. My journey is rooted in a deep commitment to empowerment—whether it's guiding first-generation learners, designing inclusive futures, or navigating global conversations around safety, legacy, and learning.
               </p>
               <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                Throughout my career, I’ve held diverse roles—from post-doctoral researcher in Sweden to senior grants advisor and POSH chair at the India Alliance. I bring a unique blend of scientific acumen, leadership, and communication, helping organizations align research objectives with real-world impact.
+                With a PhD in Biochemistry and a Postgraduate Diploma in Patent Law, I began my career in STEM with a rigorous foundation in intellectual inquiry and innovation. Over time, I complemented this with an MBA in General Management, equipping myself with the tools of strategy, financial modeling, and audit clarity—skills that translate into boardroom decision-making, family enterprise advisement, and sustainable growth planning.
               </p>
               <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                I'm passionate about fostering cross-functional collaboration, empowering teams, and building bridges between science and strategy to drive transformative change in the healthcare ecosystem.
+                For the past several years, I've also served as a Career Counsellor and Communications Mentor with Freedom Employability Academy, working with underprivileged youth to build confidence, purpose, and life skills. Teaching is not a role for me—it's a relationship. That ethos extends to my work as a Certified Teacher of Swimming and Water Safety through AUSTSWIM (Australia), where I bring confidence and safety to the water, particularly for women, children, and underserved communities.
               </p>
+              <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
+                <p className="text-base md:text-lg text-gray-700 leading-relaxed font-medium">
+                  My career is not defined by a single industry—but by a single question: <em>"What does this moment need, and how can I serve with skill, empathy, and clarity?"</em>
+                </p>
+              </div>
             </div>
           </div>
-
           {/* Image Section */}
           <div className="order-1 md:order-2">
             <div className="relative mx-auto w-64 h-64 md:w-80 md:h-80">
