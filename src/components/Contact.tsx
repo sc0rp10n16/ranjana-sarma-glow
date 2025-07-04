@@ -48,12 +48,15 @@ const Contact = () => {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: "f29b916e-3fa7-4d71-85a7-f0f1c2c853ff", // Replace with your actual Web3Forms access key
+          access_key: "f29b916e-3fa7-4d71-85a7-f0f1c2c853ff", // Your Web3Forms access key
           name: `${formData.firstName} ${formData.lastName}`.trim(),
           email: formData.email,
           subject: formData.subject || "New message from Grow With Ranjana website",
           message: formData.message,
           from_name: "Grow With Ranjana Website",
+          // Add these for better email delivery
+          to: "growwithranjana@gmail.com", // Your email where you want to receive messages
+          replyto: formData.email, // User's email for easy replies
         }),
       });
 
@@ -209,7 +212,7 @@ const Contact = () => {
             </div>
 
             {/* Service Areas */}
-           
+            
             
             <div className="space-y-4">
               <Card className="p-6 flex items-center space-x-4 hover-card group">
