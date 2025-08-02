@@ -12,7 +12,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center gradient-bg-light relative overflow-hidden">
+    <section id="hero" className="min-h-screen flex items-center justify-center gradient-bg-light relative overflow-hidden sm:px-6 px-4 sm:py-12 py-8">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse-soft"></div>

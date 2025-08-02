@@ -46,6 +46,60 @@ const About = () => {
             </div>
           </div>
         </div>
+        
+        {/* Survivor Story Section */}
+        <div className="mt-20">
+          <Card className="p-8 bg-gradient-to-br from-blue-50 to-cyan-50 border-l-4 border-blue-500">
+            <div className="text-center mb-8">
+              <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                🌊 From Survivor to Instructor 🌊
+              </h3>
+            </div>
+            
+            <div className="space-y-6 max-w-4xl mx-auto">
+              <p className="text-lg text-gray-700 leading-relaxed">
+                In 2010, I nearly drowned in an eddy current on the Madison River near Yellowstone National Park. A stranger—my guardian angel—pulled me out. That moment changed the course of my life.
+              </p>
+              
+              <p className="text-lg text-gray-700 leading-relaxed">
+                For 15 years since, I've been reclaiming my relationship with water. Slowly, deliberately, and with deep respect:
+              </p>
+              
+              <div className="grid sm:grid-cols-2 gap-4 my-8">
+                <div className="flex items-center space-x-3">
+                  <span className="text-green-600 font-bold text-xl">✅</span>
+                  <span className="text-lg text-gray-700">I learned how to swim.</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <span className="text-green-600 font-bold text-xl">✅</span>
+                  <span className="text-lg text-gray-700">I became a certified scuba diver.</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <span className="text-green-600 font-bold text-xl">✅</span>
+                  <span className="text-lg text-gray-700">I learned how to surf.</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <span className="text-green-600 font-bold text-xl">✅</span>
+                  <span className="text-lg text-gray-700">I completed AUSTSWIM certification.</span>
+                </div>
+              </div>
+              
+              <p className="text-lg text-gray-700 leading-relaxed">
+                And this past year, I completed the rigorous assessments to become an accredited Swimming and Water Safety Instructor through the Australian Swimming Coaches and Teachers Association (AUSTSWIM).
+              </p>
+              
+              <div className="bg-blue-100 p-6 rounded-lg border-l-4 border-blue-600">
+                <p className="text-lg text-gray-800 leading-relaxed font-medium">
+                  This is more than a qualification—it's a personal milestone. It stands for resilience, healing, and the belief that fear can be transformed into skill, strength, and service.
+                </p>
+              </div>
+              
+              <p className="text-lg text-gray-700 leading-relaxed text-center italic">
+                I hope to help others—especially adults—build comfort and confidence in the water. Because everyone deserves to feel safe, strong, and free in the water.
+              </p>
+            </div>
+          </Card>
+        </div>
       </div>
     </section>
   );

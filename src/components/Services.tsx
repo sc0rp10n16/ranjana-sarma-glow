@@ -23,6 +23,12 @@ const Services = () => {
       description: "Offering personalized mentorship to students seeking guidance and support in their career paths.",
       image: "1.svg", // You might want to change this path to an actual image
       tags: ["Mentorship", "Career Growth", "Student Support", "Guidance"]
+    },
+    {
+      title: "🌊 Swimming & Water Safety Instruction",
+      description: "AUSTSWIM certified instructor helping adults build comfort and confidence in water. From survivor to instructor - transforming fear into skill, strength, and service.",
+      image: "4.avif",
+      tags: ["AUSTSWIM Certified", "Adult Swimming", "Water Safety", "Confidence Building", "Trauma-Informed"]
     }
   ];
   
@@ -41,7 +47,7 @@ const Services = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <Card key={index} className="overflow-hidden group hover:shadow-2xl transition-all duration-500 hover:scale-105">
               <div className="relative overflow-hidden">
@@ -50,13 +56,7 @@ const Services = () => {
                   alt={service.title}
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <Button 
-                  size="sm" 
-                  className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white/20 backdrop-blur-sm hover:bg-white/30"
-                >
-                  <Link className="w-4 h-4" />
-                </Button>
+                
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2 group-hover:text-purple-600 transition-colors duration-300">

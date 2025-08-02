@@ -49,8 +49,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <div className="flex-shrink-0">
-            <a href="#hero" className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
-              <img src="/GR2.png" alt="logo" className="w-8 h-8 mr-2 rounded-md bg-transparent opacity-80 flex items-center justify-center text-white text-lg" />
+            <a href="#hero" className="flex items-center justify-center">
+              <img src="/gwr_logo.png" alt="Grow with Ranjana Logo" className="h-24 w-auto" />
             </a>
           </div>
           
