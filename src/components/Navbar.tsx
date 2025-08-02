@@ -50,7 +50,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div className="flex-shrink-0">
             <a href="#hero" className="flex items-center justify-center">
-              <img src="/gwr_logo.png" alt="Grow with Ranjana Logo" className="h-24 w-auto" />
+              <img src="/gwr_logo.png" alt="Grow with Ranjana Logo" className="sm:h-24 h-36 w-full" />
             </a>
           </div>
           

@@ -43,7 +43,7 @@ const Services = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto rounded-full"></div>
           <p className="text-lg text-gray-600 mt-6 max-w-2xl mx-auto">
-            A showcase of my recent work and creative solutions
+            Empowering growth through diverse expertise - from career mentorship to water safety education
           </p>
         </div>
         
